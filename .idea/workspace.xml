@@ -9,68 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="756175f1-3471-4fff-b19a-4f4a736a2429" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-grid.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-reboot.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap-utilities.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.rtl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.rtl.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.rtl.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/lib/bootstrap.rtl.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.bundle.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.bundle.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.bundle.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.esm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.esm.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.esm.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.esm.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/libs/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/assets/logos/umbrella.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="756175f1-3471-4fff-b19a-4f4a736a2429" name="Changes" comment="first step front">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/enums/Country.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/enums/Country.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/interfaces/RegisterGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/interfaces/RegisterGroup.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/models/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/models/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/servlets/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/servlets/RegisterServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/utils/HibernateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/utils/HibernateUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.cfg.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/lib/bootstrap.min.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/parts/header.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/parts/menu.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/parts/menu.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/parts/script-style.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/parts/script-style.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
@@ -255,8 +197,17 @@
       <workItem from="1695065000363" duration="11238000" />
       <workItem from="1695282595734" duration="13515000" />
       <workItem from="1695489561880" duration="1389000" />
-      <workItem from="1695553682259" duration="10576000" />
+      <workItem from="1695553682259" duration="20081000" />
     </task>
+    <task id="LOCAL-00001" summary="first step front">
+      <option name="closed" value="true" />
+      <created>1695568388144</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1695568388144</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -272,5 +223,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first step front" />
+    <option name="LAST_COMMIT_MESSAGE" value="first step front" />
   </component>
 </project>

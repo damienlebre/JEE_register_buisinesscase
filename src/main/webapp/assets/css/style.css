@@ -1,16 +1,21 @@
+
 *{
     margin: 0;
     padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
-
-
-.navbar{
-    background: #00A8E8;
+:root {
+    --bg-custom: rgba(229, 221, 198,0.44);
+    --blue-custom: #00A8E8;
+    --yellow-text: #FFC107;
+    --bg-button-custom-blue:rgba(0,  139,199,0.83);
+    --bg-button-custom-blue-hover:rgba(0,  139,199,0.96);
+}
+.navbar, footer{
+    background: var(--blue-custom);
     font-family: 'Oswald', sans-serif;
 }
-.navbar a{
-    color: #FFC107;
+.navbar a, footer a{
+    color: var(--yellow-text);
     font-weight: bold;
 }
 .brand-logo img{
@@ -18,7 +23,10 @@
 }
 
 body{
-    background: #e5ddc670;
+    background: var(--bg-custom);
+}
+h1, h2, label, p{
+    font-family: 'Pangolin', cursive;
 }
 .country-select{
     border-width: 2px;
@@ -27,4 +35,16 @@ body{
 }
 .register-form input:placeholder-shown {
     font-style: italic;
+}
+.btn-custom-blue{
+    background-color: rgba(0,  139,199,0.83);!important;
+    font-family: 'Courgette', cursive;
+    color:#FEFEFE;
+    min-width: 130px;
+    border-radius: 8px;
+    min-height: 64px;
+}
+.btn-custom-blue:hover, .btn-custom-blue:active{
+    background-color: var(--bg-button-custom-blue-hover);!important;
+    color: var(--yellow-text);
 }
