@@ -6,5 +6,6 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<link href="css/lib/bootstrap.min.css" rel="stylesheet" >
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+<link href="assets/css/lib/bootstrap.min.css" rel="stylesheet" >
+<link href="assets/css/style.css" rel="stylesheet">
+<script src="assets/js/libs/bootstrap.bundle.min.js" ></script>

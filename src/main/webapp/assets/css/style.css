@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+.navbar{
+    background: #00A8E8;
+    font-family: 'Oswald', sans-serif;
+}
+.navbar a{
+    color: #FFC107;
+    font-weight: bold;
+}
+.brand-logo img{
+    max-width: 95px;
+}
+
+body{
+    background: #e5ddc670;
+}
+.country-select{
+    border-width: 2px;
+    border-style: inset;
+    border-color:rgb(118, 118, 118) rgb(133, 133, 133);!important;
+}
+.register-form input:placeholder-shown {
+    font-style: italic;
+}
