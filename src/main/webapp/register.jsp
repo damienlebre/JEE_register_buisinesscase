@@ -32,8 +32,8 @@
                 </c:forEach>
             </ul>
 
-             <div class="container">
-                <div class="row col-lg-12">
+             <div class="container form-container mt-5">
+                <div class="row col-lg-12 mt-5">
 
                         <form method="post" class="register-form">
 
