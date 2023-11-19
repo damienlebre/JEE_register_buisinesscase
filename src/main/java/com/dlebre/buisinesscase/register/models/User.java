@@ -5,6 +5,7 @@ import com.dlebre.buisinesscase.register.interfaces.RegisterGroup;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 
 import java.util.ArrayList;
@@ -34,6 +35,58 @@ public class User {
     @Column(name = "lastname" , length = 255, nullable = false)
     private String lastname;
 
+    @Basic
+    @NotNull(message = "Le numéro ne peux pas être vide")
+    @Column(name = "number" , nullable = false)
+    private Integer number;
+
+    @Basic
+    @NotBlank(message = "Le nom de rue ne peux pas être vide")
+    @Column(name = "street" , length = 255, nullable = false)
+    private String street;
+
+    @Basic
+    @NotBlank(message = "Le zipcode ne peux pas être vide")
+    @Column(name = "zipcode" , length = 255, nullable = false)
+    private String zipcode;
+
+    @Basic
+    @NotBlank(message = "Le nom de ville/commune ne peux pas être vide")
+    @Column(name = "city" , length = 125, nullable = false)
+    private String city;
+
+    public Integer getNumber() {
+        return number;
+    }
+
+    public void setNumber(Integer number) {
+        this.number = number;
+    }
+
+    public String getStreet() {
+        return street;
+    }
+
+    public void setStreet(String street) {
+        this.street = street;
+    }
+
+    public String getZipcode() {
+        return zipcode;
+    }
+
+    public void setZipcode(String zipcode) {
+        this.zipcode = zipcode;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
     private String password;
 
     @Transient
@@ -50,11 +103,15 @@ public class User {
     @Column(name = "country", length = 255)
     private Country country;
 
-    public User(String firstname, String lastname,String email, Country country, String password, String confirmPassword) {
+    public User(String firstname, String lastname,String email,Integer number, String street, String zicode, String city,Country country, String password, String confirmPassword) {
         this.roles = new ArrayList<Role>();
         this.firstname = firstname;
         this.lastname = lastname;
         this.email = email;
+        this.number = number;
+        this.street = street;
+        this.zipcode = zicode;
+        this.city = city;
         this.country = country;
         this.password = password;
         this.confirmPassword = confirmPassword;

@@ -43,11 +43,15 @@ public class RegisterServlet extends HttpServlet {
         String lastname = request.getParameter("lastname");
         String email = request.getParameter("email");
         String countryValue = request.getParameter("country");
+        Integer number = Integer.valueOf(request.getParameter("number"));
+        String street = request.getParameter("street");
+        String zipcode = request.getParameter("zipcode");
+        String city = request.getParameter("city");
         Country country = Country.valueOf(countryValue);
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");
 
-        User user = new User(firstname, lastname, email, country, password, confirmPassword);
+        User user = new User(firstname, lastname, email, number, street, zipcode, city, country, password, confirmPassword);
 
         //Verifie que l'email n'existe pas déja
         List<String> errorMessages = new ArrayList<>();
