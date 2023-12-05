@@ -67,22 +67,22 @@
 
                             <div class="form-group col-lg-6 col-md-8 col-sm-8 d-flex flex-column mx-auto mb-3">
                                 <label for="number" class="mb-2">Numéro de voie : </label>
-                                <input class="form-control-lg"  id="number" type="number" name="number"  placeholder="numéro de voie"/>
+                                <input class="form-control-lg"  id="number" type="number" name="number"  placeholder="Numéro de rue/voie"/>
                             </div>
 
                             <div class="form-group col-lg-6 col-md-8 col-sm-8 d-flex flex-column mx-auto mb-3">
                                 <label for="street" class="mb-2">Rue/voie : </label>
-                                <input class="form-control-lg"  id="street" type="text" name="street"  placeholder="numéro de voie"/>
+                                <input class="form-control-lg"  id="street" type="text" name="street"  placeholder="Nom de rue/voie"/>
                             </div>
 
                             <div class="form-group col-lg-6 col-md-8 col-sm-8 d-flex flex-column mx-auto mb-3">
                                 <label for="zipcode" class="mb-2">code postal : </label>
-                                <input class="form-control-lg"  id="zipcode" type="text" name="zipcode"  placeholder="zipcode"/>
+                                <input class="form-control-lg"  id="zipcode" type="text" name="zipcode"  placeholder="Zipcode"/>
                             </div>
 
                             <div class="form-group col-lg-6 col-md-8 col-sm-8 d-flex flex-column mx-auto mb-3">
                                 <label for="zipcode" class="mb-2">code postal : </label>
-                                <input class="form-control-lg"  id="city" type="text" name="city"  placeholder="city"/>
+                                <input class="form-control-lg"  id="city" type="text" name="city"  placeholder="City"/>
                             </div>
 
                             <div class="form-group col-lg-6 col-md-8 col-sm-8 d-flex flex-column mx-auto mb-3">
