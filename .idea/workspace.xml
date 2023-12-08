@@ -9,16 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="756175f1-3471-4fff-b19a-4f4a736a2429" name="Changes" comment="register form fixd step 1">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+    <list default="true" id="756175f1-3471-4fff-b19a-4f4a736a2429" name="Changes" comment="register form fixd step 2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/servlets/RegisterServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/dlebre/buisinesscase/register/servlets/RegisterServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/parts/script-style.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/parts/script-style.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/register.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +119,8 @@
       <workItem from="1700424676943" duration="612000" />
       <workItem from="1701782438640" duration="1655000" />
       <workItem from="1701936990584" duration="17667000" />
-      <workItem from="1702024402669" duration="14837000" />
+      <workItem from="1702024402669" duration="17125000" />
+      <workItem from="1702048466836" duration="1646000" />
     </task>
     <task id="LOCAL-00001" summary="first step front">
       <option name="closed" value="true" />
@@ -168,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701791986097</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="register form fixd step 2">
+      <option name="closed" value="true" />
+      <created>1702046002438</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702046002438</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +194,8 @@
     <MESSAGE value="user model and loginform update" />
     <MESSAGE value="label input update" />
     <MESSAGE value="register form fixd step 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="register form fixd step 1" />
+    <MESSAGE value="register form fixd step 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="register form fixd step 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

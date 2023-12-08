@@ -1,14 +1,16 @@
-
-*{
-    margin: 0;
-    padding: 0;
-}
 :root {
     --bg-custom: rgba(229, 221, 198,0.44);
     --blue-custom: #00A8E8;
     --yellow-text: #FFC107;
     --bg-button-custom-blue:rgba(0,  139,199,0.83);
     --bg-button-custom-blue-hover:rgba(0,  139,199,0.96);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar-brand{
+    font-family: 'Rock Salt', cursive;!important;
 }
 .navbar, footer{
     background: var(--blue-custom);
@@ -48,9 +50,13 @@ h1, h2, label, p{
     background-color: var(--bg-button-custom-blue-hover);!important;
     color: var(--yellow-text);
 }
-.register-form{
-    background: rgba(0, 139, 199, 0.6);
-    color: var(--yellow-text);
+.register-container{
+    background: rgba(0, 139, 199, 0.6);!important;
+    color: var(--yellow-text);!important;
     max-width: 935px;
     font-family: 'Lilita One', sans-serif;
+}
+.my-button:hover, .my-button:active, .my-button:visited{
+    background-color: var(--bg-button-custom-blue-hover);!important;
+    color: var(--yellow-text);!important;
 }
