@@ -48,3 +48,9 @@ h1, h2, label, p{
     background-color: var(--bg-button-custom-blue-hover);!important;
     color: var(--yellow-text);
 }
+.register-form{
+    background: rgba(0, 139, 199, 0.6);
+    color: var(--yellow-text);
+    max-width: 935px;
+    font-family: 'Lilita One', sans-serif;
+}

@@ -18,31 +18,47 @@ public class UserService {
     }
 
     public List<User> getUserByEmail(String email) {
-        SessionFactory sf = HibernateUtil.getSessionFactory();
-        Session session = sf.getCurrentSession();
-        Transaction tx = session.beginTransaction();
+        try {
+            SessionFactory sf = HibernateUtil.getSessionFactory();
+            Session session = sf.getCurrentSession();
+            Transaction tx = session.beginTransaction();
 
-        List<User> users = session.createQuery("FROM User u WHERE u.email=:email", User.class)
-                .setParameter("email", email).getResultList();
+            List<User> users = session.createQuery("FROM User u WHERE u.email=:email", User.class)
+                    .setParameter("email", email).getResultList();
 
-        tx.commit();
-        session.close();
-
-        return users;
+            tx.commit();
+            return users;
+        } catch (Exception e) {
+            e.printStackTrace(); // ou loggez l'exception
+            throw e; // Remontez l'exception pour une gestion plus globale
+        }
     }
 
-    public void registerUser(User user){
-        //(la session et la transaction pour récuperer le role se fait dans le roleservice)
-        user.addRole(this.roleService.getByName("USER"));
 
+    public void registerUser(User user) {
         SessionFactory sf = HibernateUtil.getSessionFactory();
         Session session = sf.getCurrentSession();
-        Transaction tx = session.beginTransaction();
-        user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
+        Transaction tx = null;
 
+        try {
+            tx = session.beginTransaction();
 
-        session.persist(user);
-        tx.commit();
-        session.close();
+//            user.addRole(this.roleService.getByName("User"));
+            user.setPassword(BCrypt.hashpw(user.getPassword(), BCrypt.gensalt()));
+            session.persist(user);
+
+            tx.commit();
+        } catch (Exception e) {
+            if (tx != null && tx.isActive()) {
+                tx.rollback();
+            }
+            e.printStackTrace(); // ou loggez l'exception
+            throw e; // Remontez l'exception pour une gestion plus globale
+        } finally {
+            if (session.isOpen()) {
+                session.close();
+            }
+        }
     }
+
 }

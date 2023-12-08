@@ -17,7 +17,7 @@ import jakarta.validation.Validation;
 import jakarta.validation.Validator;
 import jakarta.validation.ValidatorFactory;
 
-@WebServlet(name = "register", value = "/register")
+@WebServlet(name = "register", value = "")
 public class RegisterServlet extends HttpServlet {
 
     private Validator validator;
@@ -32,7 +32,7 @@ public class RegisterServlet extends HttpServlet {
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
-
+        request.setAttribute("countries", Country.values());
         request.getRequestDispatcher("register.jsp").forward(request, response);
     }
 
@@ -43,11 +43,28 @@ public class RegisterServlet extends HttpServlet {
         String lastname = request.getParameter("lastname");
         String email = request.getParameter("email");
         String countryValue = request.getParameter("country");
-        Integer number = Integer.valueOf(request.getParameter("number"));
+        String numberParam = request.getParameter("number");
+        Integer number = null;
+
+        if (numberParam != null && !numberParam.isEmpty()) {
+            try {
+                number = Integer.valueOf(numberParam);
+            } catch (NumberFormatException e) {
+                // Gérer la conversion en cas d'erreur
+            }
+        }
         String street = request.getParameter("street");
         String zipcode = request.getParameter("zipcode");
         String city = request.getParameter("city");
-        Country country = Country.valueOf(countryValue);
+        Country country = null;
+
+        if (countryValue != null && !countryValue.trim().isEmpty()) {
+            try {
+                country = Country.valueOf(countryValue);
+            } catch (IllegalArgumentException e) {
+                // Gérer le cas où la valeur n'est pas un membre valide de l'énumération Country
+            }
+        }
         String password = request.getParameter("password");
         String confirmPassword = request.getParameter("confirmPassword");
 
@@ -67,16 +84,23 @@ public class RegisterServlet extends HttpServlet {
         //Validation des erreurs hibernate
         Set<ConstraintViolation<User>> errors = this.validator.validate(user);
 
+        if (!errors.isEmpty()) {
+            for (ConstraintViolation<User> error : errors) {
+                System.out.println("Hibernate Error: " + error.getMessage());
+            }
+        }
+
         if (errors.isEmpty() && errorMessages.isEmpty()){
            //Enregistrer
             this.userService.registerUser(user);
            //rediriger
             response.sendRedirect("http://localhost:8080/login?registersuccess");
-//            request.getRequestDispatcher("/").forward(request, response);  //reenvoie au "home" de l'app
+//            request.getRequestDispatcher("register.jsp").forward(request, response);
         }else {
             request.setAttribute("errorsHibernate", errors);
             request.setAttribute("errors", errorMessages);
-
+            request.setAttribute("saisie", user); // garder les saisie des users
+//          et rediriger vers la page d'inscription
             request.getRequestDispatcher("register.jsp").forward(request, response);
         }
 

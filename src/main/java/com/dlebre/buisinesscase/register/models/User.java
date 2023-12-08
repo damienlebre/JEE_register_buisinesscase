@@ -16,43 +16,37 @@ import java.util.List;
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id")
     private long id;
-
-
-    @Column(unique = true)
-    @NotBlank(message = "Veuillez saisir un email")
-    @Email(message = "Merci de saisir une adresse valide")
-    private String email;
 
     @Basic
     @NotBlank(message = "Le nom ne peux pas être vide")
-    @Column(name = "firstname" , length = 255, nullable = false)
     private String firstname;
 
     @Basic
     @NotBlank(message = "Le prénom ne peux pas être vide")
-    @Column(name = "lastname" , length = 255, nullable = false)
     private String lastname;
+
+
+    @Column(nullable = false, unique = true)
+    @NotBlank(message = "L'email est obligatoire")
+    @Email(message = "Le format de l'email n'est pas valide")
+    private String email;
+
 
     @Basic
     @NotNull(message = "Le numéro ne peux pas être vide")
-    @Column(name = "number" , nullable = false)
     private Integer number;
 
     @Basic
     @NotBlank(message = "Le nom de rue ne peux pas être vide")
-    @Column(name = "street" , length = 255, nullable = false)
     private String street;
 
     @Basic
     @NotBlank(message = "Le zipcode ne peux pas être vide")
-    @Column(name = "zipcode" , length = 255, nullable = false)
     private String zipcode;
 
     @Basic
     @NotBlank(message = "Le nom de ville/commune ne peux pas être vide")
-    @Column(name = "city" , length = 125, nullable = false)
     private String city;
 
     public Integer getNumber() {
@@ -87,6 +81,8 @@ public class User {
         this.city = city;
     }
 
+    @NotBlank(message = "Indiquer un mot de passe")
+//    @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$") //Minimum eight characters, at least one letter and one number
     private String password;
 
     @Transient
@@ -100,7 +96,6 @@ public class User {
     }
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "country", length = 255)
     private Country country;
 
     public User(String firstname, String lastname,String email,Integer number, String street, String zicode, String city,Country country, String password, String confirmPassword) {

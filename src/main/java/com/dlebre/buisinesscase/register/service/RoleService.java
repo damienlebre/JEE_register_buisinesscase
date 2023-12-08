@@ -25,15 +25,5 @@ public class RoleService {
         return roleObject;
     }
 
-    public void registerUser(User user){
-        SessionFactory sf = HibernateUtil.getSessionFactory();
-        Session session = sf.getCurrentSession();
-        Transaction tx = session.beginTransaction();
 
-        session.save(user);
-
-        tx.commit();
-        session.close();
-
-    }
 }
